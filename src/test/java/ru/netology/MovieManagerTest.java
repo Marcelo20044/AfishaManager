@@ -8,11 +8,11 @@ class MovieManagerTest {
 
     @Test
     void shouldSave() {
-        MovieManager manager = new MovieManager();
+        MovieManager manager = new MovieManager(5);
         PosterItem Bloodshot = new PosterItem(1, "Bloodshot", "Action");
-        PosterItem Vpered = new PosterItem(2, "Vpered", "Cartoon" );
-        PosterItem Gentlemen = new PosterItem(3, "Gentlemen", "Action" );
-        PosterItem Trolls = new PosterItem(4, "Trolls", "Cartoon" );
+        PosterItem Vpered = new PosterItem(2, "Vpered", "Cartoon");
+        PosterItem Gentlemen = new PosterItem(3, "Gentlemen", "Action");
+        PosterItem Trolls = new PosterItem(4, "Trolls", "Cartoon");
 
         manager.save(Bloodshot);
         manager.save(Vpered);
@@ -25,7 +25,7 @@ class MovieManagerTest {
 
     @Test
     void shouldSave2() {
-        MovieManager manager = new MovieManager();
+        MovieManager manager = new MovieManager(1);
         PosterItem Bloodshot = new PosterItem(1, "Bloodshot", "Action");
 
         manager.save(Bloodshot);
@@ -36,11 +36,11 @@ class MovieManagerTest {
 
     @Test
     void shouldGetAll() {
-        MovieManager manager = new  MovieManager();
+        MovieManager manager = new MovieManager(5);
         PosterItem Bloodshot = new PosterItem(1, "Bloodshot", "Action");
-        PosterItem Vpered = new PosterItem(2, "Vpered", "Cartoon" );
-        PosterItem Gentlemen = new PosterItem(3, "Gentlemen", "Action" );
-        PosterItem Trolls = new PosterItem(4, "Trolls", "Cartoon" );
+        PosterItem Vpered = new PosterItem(2, "Vpered", "Cartoon");
+        PosterItem Gentlemen = new PosterItem(3, "Gentlemen", "Action");
+        PosterItem Trolls = new PosterItem(4, "Trolls", "Cartoon");
 
         manager.save(Bloodshot);
         manager.save(Vpered);
@@ -53,9 +53,9 @@ class MovieManagerTest {
 
     @Test
     void shouldGetAll2() {
-        MovieManager manager = new  MovieManager();
+        MovieManager manager = new MovieManager(2);
         PosterItem Bloodshot = new PosterItem(1, "Bloodshot", "Action");
-        PosterItem Vpered = new PosterItem(2, "Vpered", "Cartoon" );
+        PosterItem Vpered = new PosterItem(2, "Vpered", "Cartoon");
 
 
         manager.save(Bloodshot);
