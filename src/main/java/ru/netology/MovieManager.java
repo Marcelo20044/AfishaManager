@@ -28,6 +28,9 @@ public class MovieManager {
     }
 
     public PosterItem[] getAll() {
+        if (items.length > managerLimit) {
+            return items;
+        }
         PosterItem[] result = new PosterItem[items.length];
         for (int i = 0; i < result.length; i++) {
             int index = items.length - i - 1;
